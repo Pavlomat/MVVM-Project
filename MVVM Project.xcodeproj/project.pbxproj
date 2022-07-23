@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		BACFCE43288BF338009A9BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE42288BF338009A9BA3 /* AppDelegate.swift */; };
 		BACFCE45288BF338009A9BA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE44288BF338009A9BA3 /* SceneDelegate.swift */; };
-		BACFCE47288BF338009A9BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE46288BF338009A9BA3 /* ViewController.swift */; };
+		BACFCE47288BF338009A9BA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE46288BF338009A9BA3 /* MainViewController.swift */; };
 		BACFCE4A288BF338009A9BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACFCE48288BF338009A9BA3 /* Main.storyboard */; };
 		BACFCE4C288BF33A009A9BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACFCE4B288BF33A009A9BA3 /* Assets.xcassets */; };
 		BACFCE4F288BF33A009A9BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACFCE4D288BF33A009A9BA3 /* LaunchScreen.storyboard */; };
+		BACFCE64288C2EB5009A9BA3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE63288C2EB5009A9BA3 /* TestView.swift */; };
+		BACFCE66288C2EDE009A9BA3 /* Extensions to TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE65288C2EDE009A9BA3 /* Extensions to TestView.swift */; };
+		BACFCE68288C2F48009A9BA3 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE67288C2F48009A9BA3 /* ViewData.swift */; };
+		BACFCE6D288C2FBD009A9BA3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFCE6C288C2FBD009A9BA3 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BACFCE3F288BF338009A9BA3 /* MVVM Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACFCE42288BF338009A9BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BACFCE44288BF338009A9BA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BACFCE46288BF338009A9BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BACFCE46288BF338009A9BA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BACFCE49288BF338009A9BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BACFCE4B288BF33A009A9BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BACFCE4E288BF33A009A9BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BACFCE50288BF33A009A9BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACFCE63288C2EB5009A9BA3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BACFCE65288C2EDE009A9BA3 /* Extensions to TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions to TestView.swift"; sourceTree = "<group>"; };
+		BACFCE67288C2F48009A9BA3 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
+		BACFCE6C288C2FBD009A9BA3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		BACFCE41288BF338009A9BA3 /* MVVM Project */ = {
 			isa = PBXGroup;
 			children = (
+				BACFCE6A288C2F5B009A9BA3 /* MainModule */,
 				BACFCE42288BF338009A9BA3 /* AppDelegate.swift */,
 				BACFCE44288BF338009A9BA3 /* SceneDelegate.swift */,
-				BACFCE46288BF338009A9BA3 /* ViewController.swift */,
-				BACFCE48288BF338009A9BA3 /* Main.storyboard */,
 				BACFCE4B288BF33A009A9BA3 /* Assets.xcassets */,
 				BACFCE4D288BF33A009A9BA3 /* LaunchScreen.storyboard */,
 				BACFCE50288BF33A009A9BA3 /* Info.plist */,
 			);
 			path = "MVVM Project";
+			sourceTree = "<group>";
+		};
+		BACFCE62288C2E89009A9BA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BACFCE48288BF338009A9BA3 /* Main.storyboard */,
+				BACFCE46288BF338009A9BA3 /* MainViewController.swift */,
+				BACFCE63288C2EB5009A9BA3 /* TestView.swift */,
+				BACFCE65288C2EDE009A9BA3 /* Extensions to TestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BACFCE69288C2F4D009A9BA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BACFCE67288C2F48009A9BA3 /* ViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BACFCE6A288C2F5B009A9BA3 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				BACFCE69288C2F4D009A9BA3 /* Model */,
+				BACFCE62288C2E89009A9BA3 /* View */,
+				BACFCE6B288C2F7A009A9BA3 /* ViewModel */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		BACFCE6B288C2F7A009A9BA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BACFCE6C288C2FBD009A9BA3 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BACFCE47288BF338009A9BA3 /* ViewController.swift in Sources */,
+				BACFCE6D288C2FBD009A9BA3 /* MainViewModel.swift in Sources */,
+				BACFCE64288C2EB5009A9BA3 /* TestView.swift in Sources */,
+				BACFCE66288C2EDE009A9BA3 /* Extensions to TestView.swift in Sources */,
+				BACFCE47288BF338009A9BA3 /* MainViewController.swift in Sources */,
 				BACFCE43288BF338009A9BA3 /* AppDelegate.swift in Sources */,
+				BACFCE68288C2F48009A9BA3 /* ViewData.swift in Sources */,
 				BACFCE45288BF338009A9BA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
